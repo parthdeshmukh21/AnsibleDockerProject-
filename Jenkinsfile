@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        DOCKERHUB_USER = "<your-dockerhub-username>"
+        DOCKERHUB_USER = "parthh21"
     }
 
     stages {
