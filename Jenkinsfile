@@ -33,6 +33,11 @@ pipeline {
                 }
             }
         }
+	stage('Deploy with Ansible') {
+	    steps {
+       		 sh 'ansible-playbook -i /opt/ansible/hosts /opt/ansible/deploy.yml'
+   		 }
+	}
 
     }
 }
